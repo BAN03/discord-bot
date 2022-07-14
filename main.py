@@ -1,12 +1,13 @@
 import discord
 from discord.ext import commands
 
-API = "OTk2OTA0NDQ1MjEwMjgwMDA3.Gassmm.e1SgziJFpPU_CIib3gE-1znHCMhd7ajlg8I2ZI"
+#Lectura de API
+API = open("API.txt", "r").readlines()[0]
 bot = commands.Bot(command_prefix='>')
 
 if __name__ == "__main__":
 
-    #Inicio del bot
+    #Chequeo de inicio del bot
     @bot.event
     async def on_ready():
         print(f"La {bot.user} esta lista")
@@ -38,3 +39,4 @@ if __name__ == "__main__":
 
     bot.run(API)
 
+API.close()
