@@ -2,7 +2,9 @@ import discord
 from discord.ext import commands
 
 #Lectura de API
-API = open("API.txt", "r").readlines()[0]
+apis = open("API.txt", "r").readlines()
+API_discord = apis[0]
+API_yt = apis[1]
 bot = commands.Bot(command_prefix='>')
 
 if __name__ == "__main__":
