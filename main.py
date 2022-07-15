@@ -39,6 +39,6 @@ if __name__ == "__main__":
         await ctx.send(args, tts=True)
     
 
-    bot.run(API)
+    bot.run(API_discord)
 
-API.close()
+apis.close()
